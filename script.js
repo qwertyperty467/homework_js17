@@ -1,12 +1,8 @@
 // 1
 console.log(1);
-const input = document.querySelector(".task1-input")
-const btn = document.querySelector(".task1-btn")
-
-// как сделать так чтоб инпут менял текст кнопки 
-btn.addEventListener('click', () => {
-  btn.textContent = input.value;
-});
+const text = document.getElementById("task1-text")
+const btn = document.getElementById("task1-btn")
+console.log(text.textContent = btn.textContent);
 
 // 2
 console.log(2);
@@ -31,6 +27,5 @@ console.log(image.alt);
 console.log(4);
 
 const list = document.querySelector(".task4-list")
-// как изменить первый елемент списка
-const firistElement = list.querySelector("li")
-firistElement.textContent = 467
+
+list.firstElementChild.textContent = "qwerty"
